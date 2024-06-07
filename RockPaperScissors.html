@@ -8,6 +8,8 @@
 <body>
     <script>
         console.log("Hello World")
+        let humanScore = 0;
+        let computerScore = 0;
 
        function getComputerChoiceInt(min, max){
         const minChoice = Math.ceil(0);
@@ -18,10 +20,11 @@
         console.log(getComputerChoiceInt());
 
         function getPlayerChoice(){
-         let choice = prompt("Rock, Paper or Scissors?");
-         if (choice = "Rock" || "rock"); 
-         else if (choice = "Paper" || "paper");
-         else (choice = "Scissors" || "scissors");
+         
+         let choice = prompt("Rock, Paper or Scissors?");   
+         if (choice == "Rock" || "rock"); 
+         else if (choice == "Paper" || "paper");
+         else (choice == "Scissors" || "scissors");
          return choice;
         }
         console.log(getPlayerChoice());
