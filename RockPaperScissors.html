@@ -9,9 +9,23 @@
     <script>
         console.log("Hello World")
 
-       function getComputerChoice(){
-        
+       function getComputerChoiceInt(min, max){
+        const minChoice = Math.ceil(0);
+        const maxChoice = Math.floor(2);
+        return Math.floor(Math.random() * (maxChoice - minChoice + 1)+ 
+     minChoice);
         }
+        console.log(getComputerChoiceInt());
+
+        function getPlayerChoice(){
+         let choice = prompt("Rock, Paper or Scissors?");
+         if (choice = "Rock" || "rock"); 
+         else if (choice = "Paper" || "paper");
+         else (choice = "Scissors" || "scissors");
+         return choice;
+        }
+        console.log(getPlayerChoice());
+
     </script>
 </body>
 </html>
