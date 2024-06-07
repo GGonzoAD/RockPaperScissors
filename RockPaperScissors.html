@@ -16,6 +16,11 @@
         const maxChoice = Math.floor(2);
         return Math.floor(Math.random() * (maxChoice - minChoice + 1)+ 
      minChoice);
+
+     if (getComputerChoiceInt == 0 == "Rock");
+     else if(getComputerChoiceInt == 1 == "Paper");
+     else (getComputerChoiceInt == 2 == "Scissors")
+     return getComputerChoiceInt;
         }
         console.log(getComputerChoiceInt());
 
@@ -28,6 +33,15 @@
          return choice;
         }
         console.log(getPlayerChoice());
+
+        function playRound(humanChoice, computerChoice){
+
+        }
+
+        const humanSelection = getPlayerChoice();
+        const computerSelection = getComputerChoiceInt();
+
+        playRound(humanSelection, computerSelection);
 
     </script>
 </body>
