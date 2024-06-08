@@ -14,12 +14,12 @@
        function getComputerChoiceInt(min, max){
         const minChoice = Math.ceil(0);
         const maxChoice = Math.floor(2);
-        return Math.floor(Math.random() * (maxChoice - minChoice + 1)+ 
-     minChoice);
-        }
         if (getComputerChoiceInt == 0 == "Rock");
         else if(getComputerChoiceInt == 1 == "Paper");
-        else (getComputerChoiceInt == 2 == "Scissors")
+        else (getComputerChoiceInt == 2 == "Scissors");
+        return Math.floor(Math.random() * (maxChoice - minChoice + 1) + 
+        minChoice);
+        }
     
         console.log(getComputerChoiceInt());
 
