@@ -8,8 +8,7 @@
 <body>
     <script>
         console.log("Hello World")
-        let humanScore = 0;
-        let computerScore = 0;
+        
 
         function getComputerChoice(){
           let comeChoice = ["Rock","Paper","Scissors"];
@@ -32,22 +31,28 @@
 
         function playRound(humanChoice, computerChoice){
             if (humanChoice == "rock" || "Rock" && computerChoice == "Scissors") {
-                humanScore = ++humanScore
+                humanScore = ++humanScore; 
+                alert("You win rock beats Scissors");
             } 
             else if (humanChoice == "paper" || "Paper" && computerChoice == "Rock") {
-                humanScore = ++humanScore
+                humanScore = ++humanScore;
+                alert("You win Paper beats Rock");
             }
             else if (humanChoice == "scissors" || "Scissors" && computerChoice == "Paper"){
-                humanScore = ++humanScore
+                humanScore = ++humanScore;
+                alert("You win Scissors beats Paper");
             }
             else if (humanChoice == "scissors" || "Scissors" && computerChoice ==  "Rock"){
-                computerChoice = ++computerChoice
+                computerScore = ++computerScore;
+                alert("You lose Rock beats Scissors");
             }
             else if (humanChoice == "rock" || "Rock" && computerChoice == "Paper"){
-                computerChoice = ++computerChoice
+                computerScore = ++computerScore
+                alert("You lose Paper beats Rock");
             }
             else if (humanChoice == "paper" || "Paper" && computerChoice == "Scissors"){
-                computerChoice = ++computerChoice
+                computerScore = ++computerScore
+                alert("You lose Scissors beats Paper");
             }
             else if (humanChoice == "paper" || "Paper" && computerChoice == "Paper"){
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
@@ -60,14 +65,19 @@
             }
         }
 
-        const humanSelection = getPlayerChoice();
-        const computerSelection = getComputerChoice();
+       
+        function playGame(){
+            let humanScore = 0;
+            let computerScore = 0;
+            const humanSelection = getPlayerChoice();
+            const computerSelection = getComputerChoice();
 
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
-        playRound(humanSelection, computerSelection);
+            playRound(humanSelection, computerSelection);
+            playRound(humanSelection, computerSelection);
+            playRound(humanSelection, computerSelection);
+            playRound(humanSelection, computerSelection);
+            playRound(humanSelection, computerSelection);
+        }
 
     </script>
 </body>
