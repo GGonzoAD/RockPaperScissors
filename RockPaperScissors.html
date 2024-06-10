@@ -14,11 +14,11 @@
         function getComputerChoiceInt(min, max){
         const minChoice = Math.ceil(0);
         const maxChoice = Math.floor(2);
+        return Math.floor(Math.random() * (maxChoice - minChoice + 1) + 
+        minChoice);
         if (getComputerChoiceInt == 0 == "Rock");
         else if(getComputerChoiceInt == 1 == "Paper");
         else (getComputerChoiceInt == 2 == "Scissors");
-        return Math.floor(Math.random() * (maxChoice - minChoice + 1) + 
-        minChoice);
         }
     
         console.log(getComputerChoiceInt());
@@ -34,7 +34,12 @@
         console.log(getPlayerChoice());
 
         function playRound(humanChoice, computerChoice){
-
+            if (humanChoice == "rock" || "Rock" || computerChoice == "scissors" || "Scissors");
+            else if (humanChoice == "paper" || "Paper" || computerChoice == "rock" || "Rock");
+            else if (humanChoice == "scissors" || "Scissors" || computerChoice == "paper" || "Paper");
+            else if (humanChoice == "scissors" || "Scissors" || computerChoice == "rock" || "Rock");
+            else if (humanChoice == "rock" || "Rock" || computerChoice == "paper" || "Paper");
+            else if (humanChoice == "paper" || "Paper" || computerChoice == "scissors" || "Scissors");
         }
 
         const humanSelection = getPlayerChoice();
