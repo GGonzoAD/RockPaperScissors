@@ -65,17 +65,22 @@
             }
         }
 
+        const humanSelection = getPlayerChoice;
+        const computerSelection = getComputerChoice;
        
         function playGame(){
             let humanScore = 0;
             let computerScore = 0;
-            const humanSelection = getPlayerChoice();
-            const computerSelection = getComputerChoice();
-
+            
             playRound(humanSelection, computerSelection);
+            const humanSelection = getPlayerChoice;
+            const computerSelection = getComputerChoice;
             playRound(humanSelection, computerSelection);
+            
             playRound(humanSelection, computerSelection);
+             
             playRound(humanSelection, computerSelection);
+             
             playRound(humanSelection, computerSelection);
         }
 
