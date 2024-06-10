@@ -11,18 +11,14 @@
         let humanScore = 0;
         let computerScore = 0;
 
-        function getComputerChoiceInt(min, max){
-        const minChoice = Math.ceil(0);
-        const maxChoice = Math.floor(2);
-        Math.floor(Math.random() * (maxChoice - minChoice + 1) + 
-        minChoice);
-        if (Math.floor == 0 == "Rock");
-        else if(Math.floor == 1 == "Paper");
-        else (Math.floor == 2 == "Scissors");
-        return Math.floor()
+        function getComputerChoice(){
+          let comeChoice = ["Rock","Paper","Scissors"];
+          let randomIndex = Math.floor(Math.random()*3);
+          let randomChoice = comeChoice[randomIndex];
+          return randomChoice
         }
     
-        console.log(getComputerChoiceInt());
+        console.log(getComputerChoice());
 
         function getPlayerChoice(){
          
@@ -47,7 +43,7 @@
         }
 
         const humanSelection = getPlayerChoice();
-        const computerSelection = getComputerChoiceInt();
+        const computerSelection = getComputerChoice();
 
         playRound(humanSelection, computerSelection);
         playRound(humanSelection, computerSelection);
