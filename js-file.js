@@ -63,21 +63,9 @@
         let computerScore = 0;
         playRound(humanSelection, computerSelection);
 
-        
-       
-        const btn = document.querySelector("#Paper");
-        btn.addEventListener("click", () => {
-        alert("Hello World");
-        })
-
-        const b = document.querySelector("Rock");
-        b.addEventListener("click", () => {
-            alert("Hello World");
-        })
-
         // the JavaScript file
-         const butn = document.querySelector("#btn");
-         butn.addEventListener("click", () => {
+         const btn = document.querySelector("#btn");
+         btn.addEventListener("click", () => {
          alert("Hello World");
          });
 
