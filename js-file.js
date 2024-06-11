@@ -67,11 +67,17 @@
        
         const btn = document.querySelector("#Paper");
         btn.addEventListener("click", () => {
-        alert("Hello World")
+        alert("Hello World");
         })
 
-        const b = document.querySelector("#btn");
+        const b = document.querySelector("Rock");
         b.addEventListener("click", () => {
             alert("Hello World");
-        });
+        })
+
+        // the JavaScript file
+         const butn = document.querySelector("#btn");
+         butn.addEventListener("click", () => {
+         alert("Hello World");
+         });
 
