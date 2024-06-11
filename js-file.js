@@ -64,8 +64,11 @@
         playRound(humanSelection, computerSelection);
 
         // the JavaScript file
+         function alertFunction(){
+            alert("You Chose Rock");
+         }
+
          const btn = document.querySelector("#btn");
-         btn.addEventListener("click", () => {
-         alert("Hello World");
-         });
+
+         btn.addEventListener("click",alertFunction)
 
