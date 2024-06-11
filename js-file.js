@@ -65,7 +65,13 @@
 
         
        
-        const btn = document.querySelector("#Paper")
+        const btn = document.querySelector("#Paper");
         btn.addEventListener("click", () => {
         alert("Hello World")
         })
+
+        const b = document.querySelector("#btn");
+        b.addEventListener("click", () => {
+            alert("Hello World");
+        });
+
