@@ -70,5 +70,22 @@
 
          const btn = document.querySelector("#btn");
 
+         btn.addEventListener("click",alertFunction);
+
+         function alertFunction(){
+            alert("You Chose Paper");
+         }
+
+         const b = document.querySelector("#b");
+
+         btn.addEventListener("click",alertFunction)
+
+         
+         function alertFunction(){
+            alert("You Chose Scissors");
+         }
+
+         const bt = document.querySelector("#bt");
+
          btn.addEventListener("click",alertFunction)
 
