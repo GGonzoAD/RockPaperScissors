@@ -67,22 +67,10 @@
 
         const humanSelection = getPlayerChoice;
         const computerSelection = getComputerChoice;
+        let humanScore = 0;
+        let computerScore = 0;
+        playRound(humanSelection, computerSelection);
        
-        function playGame(){
-            let humanScore = 0;
-            let computerScore = 0;
-            
-            playRound(humanSelection, computerSelection);
-            const humanSelection = getPlayerChoice;
-            const computerSelection = getComputerChoice;
-            playRound(humanSelection, computerSelection);
-            
-            playRound(humanSelection, computerSelection);
-             
-            playRound(humanSelection, computerSelection);
-             
-            playRound(humanSelection, computerSelection);
-        }
 
     </script>
 </body>
