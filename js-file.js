@@ -78,7 +78,7 @@
 
          const b = document.querySelector("#b");
 
-         btn.addEventListener("click",alertFunction)
+         btn.addEventListener("click",alertFunction,playRound)
 
          
          function alertFunction(){
@@ -87,5 +87,5 @@
 
          const bt = document.querySelector("#bt");
 
-         btn.addEventListener("click",alertFunction)
+         btn.addEventListener("click",alertFunction,playRound)
 
