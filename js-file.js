@@ -57,7 +57,7 @@
             }
         }
 
-        const humanSelection = getPlayerChoice;
+        const humanSelection = buttons;
         const computerSelection = getComputerChoice;
         let humanScore = 0;
         let computerScore = 0;
