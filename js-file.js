@@ -63,20 +63,13 @@
         let computerScore = 0;
         playRound(humanSelection, computerSelection);
 
-        const btns = document.querySelector('#btns');
-        btns.addEventListener("click", () => {
-            alert("You Chose Rock");
-        });
-        const btn = document.querySelector('#btn');
-        btn.addEventListener("click", () => {
-            alert("You Chose Paper");
-        });
+        const buttons = document.querySelectorAll("button");
 
-        const but = document.querySelector('#but');
-        but.addEventListener("click", () => {
-            alert("You Chose Scissors");
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+                alert(button.id);
+            });
         });
-
 
 
 
