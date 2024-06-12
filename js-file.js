@@ -64,10 +64,7 @@
         playRound(humanSelection, computerSelection);
 
         // the Alert Function for the rock button
-         function alertFunction() {
-            alert("You Chose Rock");
-         }
          const btn = document.querySelector("#btn");
-         btn.addEventListener("click", alertFunction);
+         btn.onclick = () => alert("You Chose Rock");
 
 
