@@ -63,23 +63,11 @@
         let computerScore = 0;
         playRound(humanSelection, computerSelection);
 
-        // the JavaScript file
-         function alertFunction(){
+        // the Alert Function for the rock button
+         function alertFunction() {
             alert("You Chose Rock");
          }
          const btn = document.querySelector("#btn");
-         btn.addEventListener("click",alertFunction);
+         btn.addEventListener("click", alertFunction);
 
-         function alertFunction(){
-            alert("You Chose Paper");
-         }
-         const b = document.querySelector("#b");
-         b.addEventListener("click",alertFunction)
-
-         
-         function alertFunction(){
-            alert("You Chose Scissors");
-         }
-         const bt = document.querySelector("#bt");
-         bt.addEventListener("click",alertFunction)
 
