@@ -63,16 +63,20 @@
         let computerScore = 0;
         playRound(humanSelection, computerSelection);
 
-        // buttons is a node list. It looks and acts much like an array
-         const btns = document.querySelectorAll("button");
+        const btns = document.querySelector('#btns');
+        btns.addEventListener("click", () => {
+            alert("You Chose Rock");
+        });
+        const btn = document.querySelector('#btn');
+        btn.addEventListener("click", () => {
+            alert("You Chose Paper");
+        });
 
-         // we use the .forEach method to iterate through each button
-         btns.forEach((button) => {
-            // we use the forEach method to iterate through each button
-            button.addEventListener("click", () => {
-                alert(button.id);
+        const but = document.querySelector('#but');
+        but.addEventListener("click", () => {
+            alert("You Chose Scissors");
+        });
 
-            });
-         });
+
 
 
