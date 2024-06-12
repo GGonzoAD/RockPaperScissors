@@ -63,13 +63,13 @@
         let computerScore = 0;
         playRound(humanSelection, computerSelection);
 
-        // the Alert Function for the rock button
-        function alertFunction(){
-            alert("You Chose Rock");
-        }
-        const btn = document.querySelector("#btn");
-        
+        // 
+         const btns = document.querySelectorAll("button");
+         btns.forEach((button) => {
+            // we use the forEach method to iterate through each button
+            button.addEventListener("click", () => {
 
-        btn.addEventListener("click", alertFunction);
+            });
+         });
 
 
