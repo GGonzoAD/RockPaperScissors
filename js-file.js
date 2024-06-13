@@ -11,48 +11,59 @@
     
         console.log(getComputerChoice());
 
-        function getPlayerChoice(){
+        //function getPlayerChoice(){
          
-         let choice = prompt("Rock, Paper or Scissors?");   
-         if (choice == "Rock" || "rock"); 
-         else if (choice == "Paper" || "paper");
-         else (choice == "Scissors" || "scissors");
-         return choice;
-        }
-        console.log(getPlayerChoice());
+         //let choice = prompt("Rock, Paper or Scissors?");   
+         //if (choice == "Rock" || "rock"); 
+         //else if (choice == "Paper" || "paper");
+         //else (choice == "Scissors" || "scissors");
+         //return choice;
+        //}
+        //console.log(getPlayerChoice());
 
-        function playRound(humanChoice, computerChoice){
-            if (humanChoice == "rock" || "Rock" && computerChoice == "Scissors") {
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach((button) => {
+            button.addEventListener("click",playRound, () => {
+                alert(button.id);
+                return (button.id);
+            });
+        });
+        const humanSelection = buttons;
+        console.log(buttons);
+
+        function playRound(humanSelection, computerChoice){
+            if (humanSelection == "rock" || "Rock" && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
                 alert("You win rock beats Scissors");
             } 
-            else if (humanChoice == "paper" || "Paper" && computerChoice == "Rock") {
+            else if (humanSelection == "paper" || "Paper" && computerChoice == "Rock") {
                 humanScore = ++humanScore;
                 alert("You win Paper beats Rock");
             }
-            else if (humanChoice == "scissors" || "Scissors" && computerChoice == "Paper"){
+            else if (humanSelection == "scissors" || "Scissors" && computerChoice == "Paper"){
                 humanScore = ++humanScore;
                 alert("You win Scissors beats Paper");
             }
-            else if (humanChoice == "scissors" || "Scissors" && computerChoice ==  "Rock"){
+            else if (humanSelection == "scissors" || "Scissors" && computerChoice ==  "Rock"){
                 computerScore = ++computerScore;
                 alert("You lose Rock beats Scissors");
             }
-            else if (humanChoice == "rock" || "Rock" && computerChoice == "Paper"){
+            else if (humanSelection == "rock" || "Rock" && computerChoice == "Paper"){
                 computerScore = ++computerScore
                 alert("You lose Paper beats Rock");
             }
-            else if (humanChoice == "paper" || "Paper" && computerChoice == "Scissors"){
+            else if (humanSelection == "paper" || "Paper" && computerChoice == "Scissors"){
                 computerScore = ++computerScore
                 alert("You lose Scissors beats Paper");
             }
-            else if (humanChoice == "paper" || "Paper" && computerChoice == "Paper"){
+            else if (humanSelection == "paper" || "Paper" && computerChoice == "Paper"){
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
-            else if (humanChoice == "rock" || "Rock" && computerChoice == "Rock"){
+            else if (humanSelection == "rock" || "Rock" && computerChoice == "Rock"){
                 alert(`It is a draw Human chose' ${humanScore} vs Computer: ${computerScore}`)
             }
-            else (humanChoice == "scissors" || "Scissors" && computerChoice == "Scissors");{
+            else (humanSelection == "scissors" || "Scissors" && computerChoice == "Scissors");{
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
         }
@@ -60,16 +71,7 @@
         
         let humanScore = 0;
         let computerScore = 0;
-        const buttons = document.querySelectorAll("button");
-
-        buttons.forEach((button) => {
-            button.addEventListener("click",playRound, () => {
-                alert(button.id);
-                console.log(button.id);
-            });
-        });
-        const humanSelection = buttons;
-        console.log(humanSelection);
+        
         const computerSelection = getComputerChoice;
         playRound(humanSelection, computerSelection);
 
