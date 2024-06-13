@@ -21,6 +21,9 @@
         //}
         //console.log(getPlayerChoice());
 
+        let humanScore = 0;
+        let computerScore = 0;
+
         const buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
@@ -29,8 +32,10 @@
                 return (button.id);
             });
         });
-        const humanSelection = buttons;
-        console.log(buttons);
+        let humanSelection = buttons;
+        console.log(humanSelection);
+        
+        
 
         function playRound(humanSelection, computerChoice){
             if (humanSelection == "rock" || "Rock" && computerChoice == "Scissors") {
@@ -38,24 +43,24 @@
                 alert("You win rock beats Scissors");
             } 
             else if (humanSelection == "paper" || "Paper" && computerChoice == "Rock") {
-                humanScore = ++humanScore;
                 alert("You win Paper beats Rock");
+                humanScore = ++humanScore;
             }
             else if (humanSelection == "scissors" || "Scissors" && computerChoice == "Paper"){
-                humanScore = ++humanScore;
                 alert("You win Scissors beats Paper");
+                humanScore = ++humanScore;
             }
             else if (humanSelection == "scissors" || "Scissors" && computerChoice ==  "Rock"){
-                computerScore = ++computerScore;
                 alert("You lose Rock beats Scissors");
+                computerScore = ++computerScore;
             }
             else if (humanSelection == "rock" || "Rock" && computerChoice == "Paper"){
-                computerScore = ++computerScore
                 alert("You lose Paper beats Rock");
+                computerScore = ++computerScore
             }
             else if (humanSelection == "paper" || "Paper" && computerChoice == "Scissors"){
-                computerScore = ++computerScore
                 alert("You lose Scissors beats Paper");
+                computerScore = ++computerScore
             }
             else if (humanSelection == "paper" || "Paper" && computerChoice == "Paper"){
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
@@ -67,13 +72,12 @@
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
         }
-
+        console.log(humanSelection);
         
-        let humanScore = 0;
-        let computerScore = 0;
+        
         
         const computerSelection = getComputerChoice;
-        playRound(humanSelection, computerSelection);
+       // playRound(humanSelection, computerSelection);
 
 
 
