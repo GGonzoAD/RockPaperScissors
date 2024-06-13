@@ -38,37 +38,37 @@
         
 
         function playRound(humanSelection, computerChoice){
-            if (humanSelection == "rock" || "Rock" && computerChoice == "Scissors") {
+            if (humanSelection == "Rock" && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
                 alert("You win rock beats Scissors");
             } 
-            else if (humanSelection == "paper" || "Paper" && computerChoice == "Rock") {
+            else if (humanSelection == "Paper" && computerChoice == "Rock") {
                 alert("You win Paper beats Rock");
                 humanScore = ++humanScore;
             }
-            else if (humanSelection == "scissors" || "Scissors" && computerChoice == "Paper"){
+            else if (humanSelection == "Scissors" && computerChoice == "Paper"){
                 alert("You win Scissors beats Paper");
                 humanScore = ++humanScore;
             }
-            else if (humanSelection == "scissors" || "Scissors" && computerChoice ==  "Rock"){
+            else if (humanSelection == "Scissors" && computerChoice ==  "Rock"){
                 alert("You lose Rock beats Scissors");
                 computerScore = ++computerScore;
             }
-            else if (humanSelection == "rock" || "Rock" && computerChoice == "Paper"){
+            else if (humanSelection == "Rock" && computerChoice == "Paper"){
                 alert("You lose Paper beats Rock");
                 computerScore = ++computerScore
             }
-            else if (humanSelection == "paper" || "Paper" && computerChoice == "Scissors"){
+            else if (humanSelection == "Paper" && computerChoice == "Scissors"){
                 alert("You lose Scissors beats Paper");
                 computerScore = ++computerScore
             }
-            else if (humanSelection == "paper" || "Paper" && computerChoice == "Paper"){
+            else if (humanSelection == "Paper" && computerChoice == "Paper"){
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
-            else if (humanSelection == "rock" || "Rock" && computerChoice == "Rock"){
+            else if (humanSelection == "Rock" && computerChoice == "Rock"){
                 alert(`It is a draw Human chose' ${humanScore} vs Computer: ${computerScore}`)
             }
-            else (humanSelection == "scissors" || "Scissors" && computerChoice == "Scissors");{
+            else (humanSelection == "Scissors" && computerChoice == "Scissors");{
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
         }
