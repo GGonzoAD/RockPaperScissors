@@ -57,19 +57,21 @@
             }
         }
 
-        const humanSelection = buttons;
-        const computerSelection = getComputerChoice;
+        
         let humanScore = 0;
         let computerScore = 0;
-        playRound(humanSelection, computerSelection);
-
         const buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
+                console.log(button.id);
             });
         });
+        const humanSelection = buttons;
+        console.log(humanSelection);
+        const computerSelection = getComputerChoice;
+        playRound(humanSelection, computerSelection);
 
 
 
