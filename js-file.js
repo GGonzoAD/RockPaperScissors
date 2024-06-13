@@ -33,7 +33,7 @@
             });
         });
         let humanSelection = buttons;
-        console.log(humanSelection);
+        
         
         
 
@@ -72,12 +72,12 @@
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
         }
-        console.log(humanSelection);
+        
         
         
         
         const computerSelection = getComputerChoice;
-       // playRound(humanSelection, computerSelection);
+        playRound(humanSelection, computerSelection);
 
 
 
