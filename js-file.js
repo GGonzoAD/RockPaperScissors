@@ -27,14 +27,12 @@
         let buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
-            button.addEventListener("click",playRound, () => {
+            button.addEventListener("click", () => {
                 alert(button.id);
-                return button.id;
             });
             buttons = button.id;
         });
         let humanSelection = buttons;
-        
         
 
         function playRound(humanSelection, computerChoice){
@@ -72,12 +70,12 @@
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
             }
         }
-        
+        console.log(humanSelection);
         
         
         
         const computerSelection = getComputerChoice;
-        playRound(humanSelection, computerSelection);
+        //playRound(humanSelection, computerSelection);
 
 
 
