@@ -24,15 +24,16 @@
         let humanScore = 0;
         let computerScore = 0;
 
-        const buttons = document.querySelectorAll("button");
+        let buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
+                return button.id;
             });
+            buttons = button.id;
         });
         let humanSelection = buttons;
-        
         
         
 
@@ -76,7 +77,7 @@
         
         
         const computerSelection = getComputerChoice;
-        //playRound(humanSelection, computerSelection);
+        playRound(humanSelection, computerSelection);
 
 
 
