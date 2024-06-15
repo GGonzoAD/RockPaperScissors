@@ -29,7 +29,6 @@
         buttons.forEach((button) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
-                return (button.id);
             });
         });
         let humanSelection = buttons;
@@ -77,7 +76,7 @@
         
         
         const computerSelection = getComputerChoice;
-        playRound(humanSelection, computerSelection);
+        //playRound(humanSelection, computerSelection);
 
 
 
