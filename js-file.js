@@ -81,7 +81,7 @@
         
         
         
-        const computerSelection = getComputerChoice;
+        //const computerSelection = getComputerChoice;
         //playRound(humanSelection, computerSelection);
 
 
