@@ -1,4 +1,3 @@
-
         console.log("Hello World")
         
 
@@ -27,12 +26,13 @@
         let buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
-            button.addEventListener("click", () => {
+            button.addEventListener("click",playRound, () => {
                 alert(button.id);
             });
             buttons = button.id;
         });
         let humanSelection = buttons;
+        console.log(humanSelection)
         
 
         function playRound(humanSelection, computerChoice){
@@ -43,38 +43,46 @@
             else if (humanSelection == "You Chose Paper" && computerChoice == "Rock") {
                 alert("You win Paper beats Rock");
                 humanScore = ++humanScore;
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else if (humanSelection == "You Chose Scissors" && computerChoice == "Paper"){
                 alert("You win Scissors beats Paper");
                 humanScore = ++humanScore;
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else if (humanSelection == "You Chose Scissors" && computerChoice ==  "Rock"){
                 alert("You lose Rock beats Scissors");
                 computerScore = ++computerScore;
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else if (humanSelection == "You Chose Rock" && computerChoice == "Paper"){
                 alert("You lose Paper beats Rock");
                 computerScore = ++computerScore
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else if (humanSelection == "You Chose Paper" && computerChoice == "Scissors"){
                 alert("You lose Scissors beats Paper");
                 computerScore = ++computerScore
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else if (humanSelection == "You Chose Paper" && computerChoice == "Paper"){
                 alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else if (humanSelection == "You Chose Rock" && computerChoice == "Rock"){
-                alert(`It is a draw Human chose' ${humanScore} vs Computer: ${computerScore}`)
+                alert(`It is a draw Human chose' ${humanScore} vs Computer: ${computerScore}`);
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
             else (humanSelection == "You Chose Scissors" && computerChoice == "Scissors");{
-                alert(`It is a draw Human chose ${humanScore} vs Computer: ${computerScore}`)
+                alert(`It is a draw Human chose ${humanSelection} vs Computer: ${computerChoice}`)
+                alert(`Human: ${humanScore} vs Computer: ${computerScore}`)
             }
         }
         
         
         
         const computerSelection = getComputerChoice;
-        playRound(humanSelection, computerSelection);
+        //playRound(humanSelection, computerSelection);
 
 
 
