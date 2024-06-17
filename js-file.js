@@ -40,7 +40,7 @@
             if (humanSelection == "You Chose Rock" && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
                 alert("You win rock beats Scissors");
-                humanScore.addEventListener("Results", () => {
+                humanScore.addEventListener("click", () => {
                     alert(humanScore);
                 });
             } 
