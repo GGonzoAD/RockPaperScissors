@@ -22,18 +22,18 @@
 
         let humanScore = 0;
         let computerScore = 0;
-        let Buttons;
+        let humanSelection;
         const buttons = document.querySelectorAll("button");
 
-        buttons.forEach((button) => {
+        buttons.forEach((button,humanSelection) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
                 console.log(button.id);
-                return button.id;
+                return button.id
             }); 
-            Buttons = button.id;
+           return humanSelection = button.id
         });
-        let humanSelection = Buttons;
+        
         console.log(humanSelection);
 
         function playRound(humanSelection, computerChoice){
