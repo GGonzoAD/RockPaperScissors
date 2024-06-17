@@ -25,15 +25,15 @@
         let humanSelection;
         const buttons = document.querySelectorAll("button");
 
-        buttons.forEach((button,humanSelection) => {
+        buttons.forEach((button) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
                 console.log(button.id);
-                return button.id
+                return button.id;
             }); 
-           return humanSelection = button.id
+           humanSelection = button.id;
         });
-        
+
         console.log(humanSelection);
 
         function playRound(humanSelection, computerChoice){
