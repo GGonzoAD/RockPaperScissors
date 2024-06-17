@@ -23,16 +23,13 @@
         let humanScore = 0;
         let computerScore = 0;
 
-        let buttons = document.querySelectorAll("button");
+        const buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
-            button.addEventListener("click",playRound, () => {
+            button.addEventListener("click", playRound , () => {
                 alert(button.id);
-            });
-            buttons = button.id;
+            }); 
         });
-        let humanSelection = buttons;
-        console.log(humanSelection)
         
 
         function playRound(humanSelection, computerChoice){
