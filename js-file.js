@@ -22,20 +22,27 @@
 
         let humanScore = 0;
         let computerScore = 0;
-
+        let Buttons;
         const buttons = document.querySelectorAll("button");
 
         buttons.forEach((button) => {
-            button.addEventListener("click", playRound , () => {
+            button.addEventListener("click",playRound, () => {
                 alert(button.id);
+                console.log(button.id);
+                return button.id;
             }); 
+            Buttons = button.id;
         });
-        
+        let humanSelection = Buttons;
+        console.log(humanSelection);
 
         function playRound(humanSelection, computerChoice){
             if (humanSelection == "You Chose Rock" && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
                 alert("You win rock beats Scissors");
+                humanScore.addEventListener("Results", () => {
+                    alert(humanScore);
+                });
             } 
             else if (humanSelection == "You Chose Paper" && computerChoice == "Rock") {
                 alert("You win Paper beats Rock");
