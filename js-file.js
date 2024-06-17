@@ -28,10 +28,10 @@
         buttons.forEach((button) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
-                console.log(button.id);
                 return button.id;
             }); 
            humanSelection = button.id;
+           console.log(humanSelection);
         });
 
         console.log(humanSelection);
