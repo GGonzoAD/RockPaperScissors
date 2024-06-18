@@ -21,7 +21,7 @@
                 alert(button.id);
                 return button.id;
             }); 
-           humanSelection = button.id;
+           return humanSelection = button.id;
         });
 
         console.log(humanSelection);
