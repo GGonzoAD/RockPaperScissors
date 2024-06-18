@@ -10,15 +10,6 @@
     
         console.log(getComputerChoice());
 
-        //function getPlayerChoice(){
-         
-         //let choice = prompt("Rock, Paper or Scissors?");   
-         //if (choice == "Rock" || "rock"); 
-         //else if (choice == "Paper" || "paper");
-         //else (choice == "Scissors" || "scissors");
-         //return choice;
-        //}
-        //console.log(getPlayerChoice());
 
         let humanScore = 0;
         let computerScore = 0;
@@ -31,7 +22,6 @@
                 return button.id;
             }); 
            humanSelection = button.id;
-           console.log(humanSelection);
         });
 
         console.log(humanSelection);
