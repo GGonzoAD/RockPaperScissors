@@ -14,10 +14,12 @@
         computerChoice = getComputerChoice();
 
         const buttons = document.querySelectorAll("button"); 
+        let someString = "Data";
         buttons.forEach((button) => {
             button.addEventListener("click", () => {
-                alert(button.id);
-                console.log(button.id); 
+                console.log(someString);
+                alert(button.id); 
+                console.log(button.id);
                 return button.id;
                 
             }); 
