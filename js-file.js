@@ -16,13 +16,13 @@
         buttons.forEach((button) => {
             button.addEventListener("click",playRound, () => {
                 alert(button.id);
-                console.log(button.id) 
+                console.log(button.id); 
                 return button.id;
                 
-            }) 
+            }); 
            humanSelection = button.id;
            console.log(humanSelection)
-        })
+        });
 
         if(humanSelection == "You Chose Rock"){
             humanSelection =="Rock"
@@ -34,8 +34,6 @@
             humanSelection == "Scissors"
         }
         
-        
-
         function playRound(humanSelection, computerChoice){
             if (humanSelection == "You Chose Rock" && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
@@ -85,11 +83,7 @@
         
         
         
-        playRound(humanSelection,computerChoice);
-        playRound(humanSelection,computerChoice);
-        playRound(humanSelection,computerChoice);
-        playRound(humanSelection,computerChoice);
-        playRound(humanSelection,computerChoice);
+        
 
 
 
