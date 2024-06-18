@@ -12,9 +12,10 @@
         }
         
         computerChoice = getComputerChoice();
+
         const buttons = document.querySelectorAll("button"); 
         buttons.forEach((button) => {
-            button.addEventListener("click",playRound, e => {
+            button.addEventListener("click", () => {
                 alert(button.id);
                 console.log(button.id); 
                 return button.id;
@@ -23,7 +24,7 @@
            humanSelection = button.id;
            console.log(humanSelection)
         });
-
+       
         if(humanSelection == "You Chose Rock"){
             humanSelection =="Rock"
         }
