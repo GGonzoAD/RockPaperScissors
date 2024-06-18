@@ -14,7 +14,7 @@
         computerChoice = getComputerChoice();
         const buttons = document.querySelectorAll("button"); 
         buttons.forEach((button) => {
-            button.addEventListener("click",playRound, () => {
+            button.addEventListener("click",playRound, e => {
                 alert(button.id);
                 console.log(button.id); 
                 return button.id;
