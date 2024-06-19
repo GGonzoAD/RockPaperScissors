@@ -39,9 +39,7 @@
             if (humanSelection == "You Chose Rock" && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
                 alert("You win rock beats Scissors");
-                humanScore.addEventListener("click", () => {
-                    alert(humanScore);
-                });
+            
             } 
             else if (humanSelection == "You Chose Paper" && computerChoice == "Rock") {
                 alert("You win Paper beats Rock");
