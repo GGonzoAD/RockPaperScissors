@@ -56,7 +56,7 @@ button.addEventListener("click", function(event) {
               alert(`It is a draw Human chose ${humanSelection} vs Computer: ${computerChoice}`);
               alert(`Human: ${humanScore} vs Computer: ${computerScore}`);
             }
-            alert("Player score is " + humanScore, "Computer score is " + computerScore, "Ties =" + ties)
+            alert("Player score is " + humanScore, "Computer score is " + computerScore, "Ties =" + ties);
             }
            }
           });
