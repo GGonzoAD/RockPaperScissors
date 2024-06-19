@@ -24,6 +24,7 @@
            humanSelection = button.id;
            console.log(humanSelection)
         });
+
        
         if(humanSelection == "You Chose Rock"){
             humanSelection =="Rock"
