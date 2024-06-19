@@ -15,7 +15,7 @@
 
         const buttons = document.querySelectorAll("button"); 
         buttons.forEach((button) => {
-            button.addEventListener("click", () => {
+            button.addEventListener("click", function() {
                 alert(button.id); 
                 console.log(button.id);
                 return button.id;
@@ -25,19 +25,8 @@
            console.log(humanSelection)
         });
 
-       
-        if(humanSelection == "You Chose Rock"){
-            humanSelection =="Rock"
-        }
-        else if (humanSelection == "You Chose Paper"){
-            humanSelection == "Paper"
-        }
-        else (humanSelection == "You Chose Scissors"); {
-            humanSelection == "Scissors"
-        }
-        
         function playRound(humanSelection, computerChoice){
-            if (humanSelection == "You Chose Rock" && computerChoice == "Scissors") {
+            if (humanSelection = button.id && computerChoice == "Scissors") {
                 humanScore = ++humanScore; 
                 alert("You win rock beats Scissors");
             
